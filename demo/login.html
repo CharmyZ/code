@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js" lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+	<title>源泰评级-会员登录</title>
+	<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/flyPanels.css">
+	<link rel="stylesheet" href="css/demo.css">
+    <style>
+h1
+{
+   
+    text-align: center;
+    color: #666;
+    margin-top:100px;
+    letter-spacing: 4px;
+    font: normal 26px/1 Verdana, Helvetica;
+}
+#inputs input
+{
+    background: #f1f1f1;
+    width: 90%;
+	height:50px;
+	margin-left:5%;
+    border: 1px solid #ccc;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+    box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
+}
+#username
+{
+    background-position: 5px -2px !important;
+}
+#password
+{
+    background-position: 5px -52px !important;
+}
+#inputs input:focus
+{
+    background-color: #fff;
+    border-color: #e8c291;
+    outline: none;
+    -moz-box-shadow: 0 0 0 1px #e8c291 inset;
+    -webkit-box-shadow: 0 0 0 1px #e8c291 inset;
+    box-shadow: 0 0 0 1px #e8c291 inset;
+}
+#actions
+{
+    margin: 25px 0 0 0;
+}
+
+#submit
+{		
+   background-color: #FFF;
+	color:#960;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+   box-shadow: 0 1px 6px 4px rgba(0, 0, 0, 0.07) inset, 0 0 0 3px rgb(254, 254, 254), 0 5px 3px 3px rgb(210, 210, 210);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d69e31 #e3a037 #d5982d #e3a037;
+    float: left;
+    height: 35px;
+    padding: 0;
+    width: 90%;
+	margin-left:5%;
+    cursor: pointer;
+	font-size:22px;
+   
+}	
+#submit:active
+{		
+    outline: none;
+     -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+     -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;		
+}
+
+#submit::-moz-focus-inner
+{
+  border: none;
+}
+
+#actions a
+{
+    color: #960;    
+    float: right;
+    line-height: 35px;
+	font-size:16px;
+	text-decoration:none;
+	margin-top:20px;
+}
+#back
+{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    color: #999;
+}
+ul, li {
+	list-style:none;
+}
+
+.auto-tip li {
+	width:253px;
+	height:22px;
+	line-height:22px;
+	font-size:14px;
+}
+.red {
+	color:#333;
+}
+.hidden {
+	display:none;
+}
+
+</style>
+</head>
+<body data-debug="true">
+			<div class="flypanels-content">
+			<form id="login">
+    <h1>会员登录</h1><hr>
+    <fieldset id="inputs">
+    <p id="parentCls"> 
+        <input id="username" class="inputElem" required type="text" placeholder="邮箱/手机号">  
+         </p> 
+        <input id="password" type="password" placeholder="密码" required>
+    </fieldset>
+    <fieldset id="actions">
+        <input type="submit" id="submit" value="登录">
+        <a href="" style="float:left; margin-left:5%;">忘记密码?</a><a href="" style="float:right; margin-right:5%;">立即注册</a>
+    </fieldset>
+</form>
+
+        </div>    
+	<script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/kitUtils.js"></script>
+	<script src="dist/jquery.flypanels.js"></script>
+	<script src="js/fastclick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+    <script src="js/jquery.hammer.js"></script>
+<script src="js/emailAutoComplete.js"></script>
+    <script>
+    $('.carousel').carousel({
+      interval: 4000
+    })
+    </script>
+    <script>
+    $('#myCarousel').hammer().on('swipeleft', function(){  
+    $('#myCarousel').carousel('next');  
+    });  
+    $('#myCarousel').hammer().on('swiperight', function(){  
+    $('#myCarousel').carousel('prev');  
+}); 
+</script>
+</body>
+</html>

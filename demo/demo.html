@@ -1,0 +1,301 @@
+<!doctype html>
+<html class="no-js" lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+	<title>源泰评级</title>
+	<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/flyPanels.css">
+	<link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="index/base.css" />
+    <link rel="stylesheet" href="index/header.css" />
+    <link rel="stylesheet" href="index/foucs.css" />
+<style>
+@media screen and (max-width: 500px) {
+.pc,.iframe_pc{
+	display:none;
+	}
+.iframe_mobile{
+    height:600px;
+}
+}
+@media screen and (min-width: 500px) {
+.bkli .active{
+	background-color:rgba(9, 9, 9, 0.5);
+	}
+.mobile{
+	display:none;
+}
+.iframe_pc{
+    height:600px;
+}
+}
+</style>
+</head>
+<body data-debug="true">
+<div class="header pc">
+	<div id="logodiv">
+		<div class="w1000c">
+			<h1 id="logo">
+				<a href="/"><img src="img/logo2.png"
+					alt="" class="pt10" /></a>
+			</h1>
+			<div class="headernav">
+				<ul class="ul1">
+					<li
+						style="display: inline-block; float: right; width: 80px; border: none;"><a
+						href="#" class="head_nav">我想要</a>
+						<ul class="ul2" style="height: 86px;">
+							<li style="padding-top: 5px;"><a
+								href="javascript:newRequest();">立即送评</a></li>
+							<li><a>下载送评单</a>
+								<ul class="ul-printpdf">
+									<li><a
+										href="">现代钱币</a></li>
+									<li><a
+										href="">古钱</a></li>
+									<li><a
+										href="">机制币</a></li>
+									<li><a
+										href="">纸钞</a></li>
+									<li><a
+										href="">邮票</a></li>
+								</ul></li>
+							<li><a href="">查询进度</a></li>
+						</ul></li>
+					<li><a href="" class="head_nav">帮助中心</a></li>
+					<li><a href="" class="head_nav">免费注册</a></li>
+					<li
+						style="display: inline; float: right; width: 70px; line-height: 16px; border-right: 1px solid #525050;">
+						<a href="" class="head_nav">登录</a>
+					</li>					
+					<li><a href=""
+						onmouseover="" class="head_nav">用户中心</a>
+						<ul class="ul3">
+							<li style="padding-top: 5px;"><a id="draft"
+								href=""></a></li>
+							<li><a id="confirm"
+								href=""></a></li>
+							<li><a id="total"
+								href=""></a></li>
+							<li><a id="payNot"
+								href=""></a></li>
+							<li><a id="send"
+								href=""></a></li>
+						</ul></li>
+					<li><a href=""
+						class="head_nav">退出</a></li>
+					<li style="width: 220px; text-align: right;"><a
+						href=""
+						style="width: 220px; font-size: 14px; text-align: right;"
+						class="head_nav">欢迎你，&nbsp;${username }</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    <div id="main-menu" class="pc">
+		<nav>
+			<ul class="content clearfix bkli">
+				<li class="bkli active"><a href="">首页</a></li>
+				<li class="dropdown bkli"><a>评级服务</a><div class="float_mask" style="right:20px;top:60px;"></div>
+					<ul class="sub-menu">
+						<li class="bkli"><a  class="randomNum" target="main" href="songping.html">送评中心</a></li>
+								<li><a class="randomNum" target="main_pc" href="fengzhuang.html">封装保护</a></li>
+                                <li><a class="randomNum" target="main_pc" href="fanwei.html">送评范围</a></li>
+                                <li><a class="randomNum" target="main_pc" href="fanwei.html">评级标准</a></li>
+                                <li><a class="randomNum" target="main_pc" href="fanwei.html">收费标准</a></li>
+                                <li><a class="randomNum" target="main_pc" href="tuandui.html">团队介绍</a></li>
+                                <li><a class="randomNum" target="main_pc" href="fenshu.html">分数报告</a></li>
+					</ul></li>
+				<li class="dropdown	bkli"><a class="randomNum"
+					href="#">托管服务</a>
+					<ul class="sub-menu">
+						<li><a class="randomNum" target="main_pc" href="tuoguan.html">托管中心</a></li>
+						<li><a class="randomNum" target="main_pc" href="tieshi.html" >托管贴士</a></li>
+						<li><a class="randomNum" target="main_pc" href="hezuo.html" >合作机构</a></li>
+					</ul></li>
+				<li class="dropdown bkli"><a>增值服务</a>
+					<ul class="sub-menu">
+						<li><a class="randomNum" target="main_pc" href="fuwu.html">个性化服务</a></li>
+						<li><a class="randomNum" target="main_pc" href="">直通车</a></li>
+						<li><a class="randomNum" target="main_pc" href="">源泰两周年纪念章</a></li>
+						<li><a class="randomNum" target="main_pc" href="">其他</a></li>
+					</ul></li>
+				<li class="dropdown bkli"><a href="">资讯快报</a>
+					<ul class="sub-menu">
+						<li><a class="randomNum" target="main_pc" href="gonggao.html" >公告</a></li>
+						<li><a class="randomNum" target="main_pc" href="xinwen.html" >新闻</a></li>
+					</ul></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="search pc" style="margin-top: 1px">
+		<div class="black f20 tr mt10"
+			style="text-align: left; float: left; width: 60%;">
+			<img style="margin-top: -5px;"
+				src="/coin-portlet/images/index/tel.gif" alt="" /> 400-821-0715
+		</div>
+		<div
+			style="float: right; margin-top: 15px; color: #000; font-size: 16px;">
+			<a href="">在线联系</a>
+		</div>
+		<div class="mt10 se">
+			<a href="javascript:search()" class="search_btn"></a> <input
+				type="text" class="txt ac_input" placeholder="请输入评级编号"
+				value="${keyWord }" maxlength="60" name="keyword" id="keyword">
+		</div>
+	</div>
+</div>
+<iframe class="iframe_pc" src="index.html" name="main_pc" frameborder="0" width="100%"></iframe>
+<!--手机显示页面-->
+<!--左边隐藏侧边栏  -->
+	<div class="flypanels-container preload mobile">
+		<div class="offcanvas flypanels-left">
+			<div class="panelcontent" data-panel="treemenu">
+             <img class="ytlogo" src="img/logo.jpg">
+				<nav class="flypanels-treemenu" role="navigation">
+					<ul>
+						<li class="haschildren"><div><a href="#" class="link" data-panel="treemenu" >评级服务</a> <a href="#" class="expand">7<i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a target="main"href="songping.html" class="link">送评中心</a></div></li>
+								<li><div><a target="main" href="fengzhuang.html" class="link">封装保护</a></div></li>
+                                <li><div><a target="main" href="fanwei.html" class="link">送评范围</a></div></li>
+                                <li><div><a target="main" href="fanwei.html" class="link">评级标准</a></div></li>
+                                <li><div><a target="main" href="fanwei.html" class="link">收费标准</a></div></li>
+                                <li><div><a target="main" href="tuandui.html" class="link">团队介绍</a></div></li>
+                                <li><div><a target="main" href="fenshu.html" class="link">分数报告</a></div></li>
+							</ul>
+						</li>
+						<li class="haschildren"><div class="link"><a href="#" class="link">托管服务</a> <a href="#" class="expand">3<i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a target="main" href="tuoguan.html" class="link">托管中心</a></div></li>
+								<li><div><a target="main" href="tieshi.html" class="link">托管贴士</a></div></li>
+								<li><div><a target="main" href="hezuo.html" class="link">合作机构</a></div></li>
+							</ul>
+						</li>
+						<li class="haschildren"><div class="link"><a href="#" class="link">增值服务</a> <a href="#" class="expand">4<i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a target="main" href="fuwu.html" class="link">个性化服务</a></div></li>
+								<li><div><a target="main" href="#" class="link">直通车</a></div></li>
+								<li><div><a target="main" href="#" class="link">源泰两周年纪念章</a></div></li>
+								<li><div><a target="main" href="#" class="link">其它</a></div></li>
+                            </ul>
+						</li>
+						<li class="haschildren"><div class="link"><a href="#" class="link">资讯快报</a> <a href="#" class="expand">2<i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a target="main" href="gonggao.html" class="link" >公告</a></div></li>
+								<li><div><a target="main" href="xinwen.html" class="link">新闻</a></div></li>
+							</ul>
+						</li>
+						<li class="haschildren"><div class="link"><a href="#" class="link">下载送评单</a> <a href="#" class="expand">5<i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a target="main" href="#" class="link">现代钱币</a></div></li>
+								<li><div><a target="main" href="#" class="link">古钱</a></div></li>
+                                <li><div><a target="main" href="#" class="link">机制币</a></div></li>
+                                <li><div><a target="main" href="#" class="link">纸钞</a></div></li>
+                                <li><div><a target="main" href="#" class="link">邮票</a></div></li>
+							</ul>
+						</li>
+						<li><div><a target="main" href="#" class="link">立刻送评</a></div></li>
+                        <li><div><a target="main" href="#" class="link" >查询进度</a></div></li>
+						<li><div><a target="main" href="#" class="link">联系我们</a></div></li>
+					</ul>
+				</nav>
+			</div>  
+		</div>
+		<!-- 左边隐藏侧边栏结束 -->
+		 <!-- 主体部分-->
+		<div class="flypanels-main mobile">		
+		<!-- header -->
+			<div class="flypanels-topbar">
+				<a class="flypanels-button-left icon-menu" data-panel="treemenu" href="#"><i class="fa fa-bars"></i></a>
+				源泰评级
+				<a class="flypanels-button-right icon-menu" data-panel="search" href="#" style="float:right;"><i class="fa fa-search"></i></a>
+			</div>
+			<!-- header ending -->
+            
+			<!-- 内容部分 -->
+			<div class="flypanels-content">
+            
+            <!--插入index里的内容-->
+			<iframe class="iframe_mobile" src="index.html" name="main" frameborder="0" width="100%"></iframe> 
+                    
+			</div>	
+			<!-- 内容部分结束 -->
+			 <div class="footer">地址:上海市田林路1016号科技绿洲三期2-1号楼<br>沪ICP备1304671号</div>
+		</div>
+		<!-- 主体部分结束-->
+         
+		<!-- 右边隐藏侧边栏 -->
+		<div class="offcanvas flypanels-right mobile">
+			<div class="panelcontent" data-panel="search">
+				<div class="searchbox">
+					<input title="search" type="text" placeholder="源泰钱币搜索"/>
+					<a href="mobileindex.html" aria-label="search" class="searchbutton"><i class="fa fa-search"></i></a>
+				    </div>
+                    <a target="main" href="index.html"><button class="home-button">首页<i class="fa fa-home"></i></button></a>
+				    <a target="main" href="login.html" style="display:none;"><button class="login-button">登录</button></a>
+                    <a target="main" href="register.html" style="display:none;"><button class="register-button">注册</button></a>
+                    <img class="code" src="img/code.png">
+			    </div>
+		     </div>
+	    </div>
+	    <!-- 右边隐藏侧边栏结束  -->
+<script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/kitUtils.js"></script>
+<script src="dist/jquery.flypanels.js"></script>
+<script src="js/fastclick.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+$('.flypanels-container').flyPanels({
+	treeMenu: {
+	init: true
+	},
+	search: {
+	init: true,
+	saveQueryCookie: true
+	}
+});
+FastClick.attach(document.body);
+});
+</script>
+<script>
+function GetRandomNum(Min, Max) {
+		var Range = Max - Min;
+		var Rand = Math.random();
+		return (Min + Math.round(Rand * Range));
+	}
+$(document).ready(
+	function() {
+		var href = $(".randomNum").attr("href");
+		$(".randomNum").each(
+		  function() {
+		   if ($(this).attr('href').indexOf('?') >= 0) {
+			$(this).attr(
+				'href',
+			$(this).attr('href') + '&num='+ GetRandomNum(1, 1000));
+			} else {
+				$(this).attr('href',$(this).attr('href') + '?num='+ GetRandomNum(1, 1000));
+			}
+		});
+		var src = $('#parentObj img:eq(0)').attr('src');
+		$('#parentObj').append("<img src="+src+">");
+		$('#parentObj img:eq(0)').remove();
+		$('.dropdown').hover(function() {
+		$(this).children('.sub-menu').slideDown(0);
+		}, function() {
+		$(this).children('.sub-menu').slideUp(0);
+		});
+}); // end ready
+$(".randomNum").on('mousedown',function(e){
+	$(".bkli .active").removeClass('active');
+	$(this).parents(".dropdown").addClass('active');
+});
+</script>
+</body>
+</html>

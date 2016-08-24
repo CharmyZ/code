@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+	<title>源泰评级</title>
+	<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/flyPanels.css">
+	<link rel="stylesheet" href="css/demo.css">
+<style>
+#myTab {
+	margin-top:20px;
+}
+.nav-tabs {
+	margin:auto;
+	font-size:14px;
+    border-bottom: 1px solid #960;
+}
+.nav-tabs li {
+	width:25%;
+	text-align:center;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{
+    color:#FFF; 
+    cursor: default;
+    background-color: #B39964;
+    border: 1px solid #960;
+    border-bottom-color: transparent;
+}
+a {
+    color: #960;
+}
+.nav>li>a {
+	padding: 10px 0;
+    position: relative;
+    display: block;
+    
+}
+h3{ 
+    margin-top:65px;
+	text-align:center;
+	color:#C93;
+	font-family:"微软雅黑";
+	}
+.tab-pane p{
+margin-top:30px;
+}
+</style>
+</head>
+<body data-debug="true">
+
+     <div class="flypanels-content">
+          <h3>封装保护</h3>
+          <ul id="myTab" class="nav nav-tabs">
+             <li class="active"><a href="#qianbi" data-toggle="tab">钱币</a></li>
+             <li><a href="#daguige" data-toggle="tab">大规格</a></li>
+             <li><a href="#zhichao" data-toggle="tab">纸钞</a></li>
+             <li><a href="#youpiao" data-toggle="tab">邮票</a></li>
+          </ul>
+          <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="qianbi">
+   
+        </div>
+        <div class="tab-pane fade" id="daguige">
+   
+        </div>
+        <div class="tab-pane fade" id="zhichao">
+    
+        </div>
+        <div class="tab-pane fade" id="youpiao">
+     
+        </div>
+     </div>
+ 
+            </div>	
+			<!-- 内容部分结束 -->
+	<script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/kitUtils.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+    <script>
+   $(function () {
+      $('#myTab li:eq(0) a').tab('show');
+   });
+</script>
+</body>
+</html>

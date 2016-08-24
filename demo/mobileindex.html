@@ -1,0 +1,178 @@
+<!doctype html>
+<html class="no-js" lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+	<title>源泰评级</title>
+	<link href='http://fonts.useso.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" href="css/flyPanels.css">
+	<link rel="stylesheet" href="css/demo.css">
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
+</head>
+<body data-debug="true">
+<!--左边隐藏侧边栏  -->
+	<div class="flypanels-container preload">
+		<div class="offcanvas flypanels-left">
+			<div class="panelcontent" data-panel="treemenu">
+             <img class="ytlogo" src="img/logo.jpg">
+				<nav class="flypanels-treemenu" role="navigation">
+				<h3 style="text-align:center;color:#FFF">藏品详情</h3>
+    <table>
+		<tbody>
+          <tr><td> 藏品编号：14275001</td></tr>
+		  <tr><td>藏品名称：2016年熊猫银币</td></tr>
+          <tr><td>年号：2016</td></tr>
+          <tr><td>国家/地区：中国</td></tr>
+          <tr><td>题材：熊猫</td></tr>
+          <tr><td>面值：10元</td></tr>
+          <tr><td>重量：1盎司</td></tr >
+          <tr><td>材质：银</td></tr>
+          <tr><td>藏品编号：14275001</td></tr>
+          <tr><td>评级分数：90</td></tr>
+		</tbody>
+	 </table>
+				</nav>
+			</div>
+           
+		</div>
+		<!-- 左边隐藏侧边栏结束 -->
+		 <!-- 主体部分-->
+		<div class="flypanels-main">
+		
+		<!-- header -->
+		
+			<div class="flypanels-topbar">
+				<a class="flypanels-button-left icon-menu" data-panel="treemenu" href="#"><i class="fa fa-bars"></i></a>
+				源泰评级
+				<a class="flypanels-button-right icon-menu" data-panel="search" href="#" style="float:right;"><i class="fa fa-search"></i></a>
+			</div>
+			<!-- header ending -->
+			
+			<div class="flypanels-content">
+             <!-- 内容部分 -->
+              <div class="btn"> <a class="btnleft" href="#" hidefocus="true"></a><a class="btnright" href="#" hidefocus="true"></a></div>
+              <div class="swiper-container" style="margin-top:50px;">
+             <div class="swiper-wrapper">
+          <div class="swiper-slide"  style="width:100%;">
+            <div class="content-slide">
+           <img class="u5" src="img/u5.jpg" />
+            </div>
+          </div>
+        <div class="swiper-slide">
+            <div class="content-slide">
+             <img class="u8" src="img/u8.jpg" />
+          </div>
+          </div>
+      </div>
+      </div>
+      <div class="tabs">
+        <a href="#" hidefocus="true" class="active"> <img src="img/u5.jpg" /></a>
+        <a href="#" hidefocus="true"><img src="img/u8.jpg" /></a>
+    </div>  
+    
+			<div class="decoration">
+			<span style="font-size:20px; margin-top:90px; display:block; border-top:#FFF solid 1px; line-height:50px">基础信息1</span>
+			 <table>
+		<tbody>
+          <tr><td> 志号：T46（1-1）</td></tr>
+		  <tr><td>时期：新中国</td></tr>
+          <tr><td>发行日期：1980.2.15</td></tr>
+          <tr><td>名称：庚申年</td></tr>
+          <tr><td>面值：8分</td></tr>
+          <tr><td>印刷版别</td></tr>
+		</tbody>
+	 </table>
+	 <hr>
+	 <span style="font-size:20px;">基础信息2</span>
+	  <table>
+		<tbody>
+          <tr><td>规格：26*31</td></tr>
+		  <tr><td>背胶：有</td></tr>
+          <tr><td>齿孔：11.5</td></tr>
+          <tr><td>铭记情况：带边</td></tr>
+          <tr><td>新旧盖：新</td></tr>
+		</tbody>
+	 </table>
+	 
+    </div>
+    </div>
+			<!-- 内容部分结束 -->
+		</div>
+		 <!-- 主体部分结束-->
+         
+		 <!-- 右边隐藏侧边栏 -->
+		<div class="offcanvas flypanels-right">
+			<div class="panelcontent" data-panel="search">
+				<div class="searchbox">
+					<input title="search" type="text" placeholder="源泰钱币搜索"/>
+					<a href="#" aria-label="search" class="searchbutton"><i class="fa fa-search"></i></a>
+				    </div>
+                    <a href="demo.html"><button class="home-button">首页<i class="fa fa-home"></i></button></a>
+				    <button class="login-button">源泰钱币分数报告</button>
+                    <img class="code" src="img/code.png">
+			</div>
+		</div>
+	</div>
+	    <!-- 右边隐藏侧边栏结束  -->
+	<script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js"></script>
+	<script src="dist/jquery.flypanels.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/idangerous.swiper.min.js"></script> 
+	<script>
+		$(document).ready(function(){
+			$('.flypanels-container').flyPanels({
+				treeMenu: {
+					init: true
+				},
+				search: {
+					init: true,
+					saveQueryCookie: true
+				}
+			});
+			FastClick.attach(document.body);
+		});
+	</script>
+	<script>
+var tabsSwiper = new Swiper('.swiper-container',{
+	speed:500,
+	onSlideChangeStart: function(){
+		$(".tabs .active").removeClass('active');
+		$(".tabs a").eq(tabsSwiper.activeIndex).addClass('active');
+	}
+});
+$(".tabs a").on('touchstart mousedown',function(e){
+	e.preventDefault()
+	$(".tabs .active").removeClass('active');
+	$(this).addClass('active');
+	tabsSwiper.swipeTo($(this).index());
+});
+$(".tabs a").click(function(e){
+	e.preventDefault();
+});
+</script>
+<script>
+ var btnSwiper = new Swiper('.swiper-container',{
+	speed:300,
+	onSlideChangeStart: function(){
+		$(".btn .active").removeClass('active');
+		$(".btn a").eq(tabsSwiper.activeIndex).addClass('active');
+	}
+});
+
+$(".btn a").on('touchstart mousedown',function(e){
+	e.preventDefault()
+	$(".btn .active").removeClass('active');
+	$(this).addClass('active');
+	tabsSwiper.swipeTo($(this).index());
+});
+
+$(".btn a").click(function(e){
+	e.preventDefault();
+});
+</script>
+</body>
+</html>

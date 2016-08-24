@@ -1,0 +1,169 @@
+
+/*index页面CSS*/
+
+.classify{
+	 margin-top:20px;
+	 width:100%;
+	 height:30px;
+	 border-bottom:1px solid #999;
+	 }
+.classify span{
+	 float:left;
+	 padding-left:10px;
+	 font-size:15px;
+	 }
+.classify a{
+	 text-decoration:none;
+	 color:#999;
+	 float:right;
+	 padding-right:10px;
+	 font-size:12px;
+	 }
+.show{
+	 width:100%;
+	 height:248px 
+	 }
+.img1{ 
+     margin-left:10%;
+	 float:left;
+	 }
+.img2{
+	 margin-right:10%;
+	 float:right;}
+.img1,.img2{
+	 width:35%;
+	 margin-top:10px;
+	 margin-bottom:20px;
+	 }
+.more{
+	 margin-top:30px;
+	 width:100%;
+	 height:20px;
+	 text-align:center;
+	 margin-bottom:20px;
+	 }
+.more a{
+	 font-size:18px;
+	 color:#CCC;
+	 text-decoration:none;
+	 }
+
+.footer{
+	 width:100%;
+	 height:60px;
+	 text-align:center;
+	 font-size:12px;
+	 background-color:#963;
+	 color:#FFF;
+	 margin-bottom:0px;
+	 padding-top:10px;
+	 line-height:20px;
+	 }
+
+.flicker-example{
+	width:100%;
+	height:100px;
+	}
+.flicker-example li{width:100%;
+    height:100px;
+	}
+	
+/*钱币搜索页面CSS*/
+
+.swiper-container{
+	background:black;
+	width:100%;
+	height:340px;
+	}
+.swiper-slide{
+	width:100%;
+	}
+.content-slide{
+	padding:20px;
+	text-align:center; 
+	}
+.content-slide img{
+	width:200px;
+	height:300px;
+	}
+.tabs{
+	width:100%;
+	height:80%;
+}
+.tabs img{
+	padding:5px 0 0 0;
+	width:50px;
+	height:75px;
+	}
+.tabs a{
+	margin:0px;
+	height:80px;
+	padding:0px;
+	display:block;
+	float:left;
+	width:50%;
+	text-align:center;
+	text-decoration:none;
+	background:#a87b40;
+	}
+.decoration{
+
+	border-top:#FFF solid 1px;
+	width:100%;
+	height:490px;
+	background:#a87b40;
+	text-align:center;
+	color:#FFF;
+}
+.decoration table{
+	margin:auto;
+	text-align:left;
+	margin-top:10px;
+}
+.flypanels-treemenu table{
+	margin:auto;
+	color:#FFF;
+	}
+.btn{display:none;}
+@media screen and (min-width: 900px) {
+.content-slide img{
+	width:300px;
+	height:450px;
+	}
+.swiper-container{
+	height:480px;
+	}
+.tabs img{
+	padding:5px 0 0 0;
+	width:70px;
+	height:90px;
+	}
+.tabs a{
+	height:90px;
+	}
+.btn{
+	display:block;
+	margin-top:-20px;}
+a.btnleft {
+	display:block;
+	background: url(../img/right.jpg);
+	left: 18%;
+	overflow: hidden;
+	width: 60px;
+	position: absolute;
+	top: 22%;
+	height: 120px;
+	z-index:999;
+}
+a.btnright {
+	display:block;
+	right: 18%;
+	background: url(../img/left.jpg);
+	overflow: hidden;
+	width: 60px;
+	position: absolute;
+	top: 22%;
+	height: 120px;
+	z-index:999;
+}
+	}
