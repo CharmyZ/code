@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=yes" />
+	<title>源泰评级</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+#myTab {
+	margin-top:70px;
+}
+.nav-tabs {
+	margin:auto;
+	font-size:14px;
+    border-bottom: 1px solid #960;
+}
+.nav-tabs li {
+	width:25%;
+	text-align:center;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{
+    color:#FFF; 
+    cursor: default;
+    background-color: #B39964;
+    border: 1px solid #960;
+    border-bottom-color: transparent;
+}
+a {
+    color: #960;
+}
+.nav>li>a {
+	padding: 10px 0;
+    position: relative;
+    display: block;
+    
+}
+h3{ 
+    margin-top:65px;
+	text-align:center;
+	color:#C93;
+	font-family:"微软雅黑";
+	}
+.tab-pane img{
+width:100%;
+}
+</style>
+<body data-debug="true">
+ <div class="flypanels-content">
+ <ul id="myTab" class="nav nav-tabs">
+             <li class="active"><a href="#serve" data-toggle="tab"><br>个性化服务</a></li>
+             <li><a href="#zhitongche" data-toggle="tab"><br>直通车</a></li>
+             <li><a href="#jinianzhang" data-toggle="tab">源泰两周年纪念章</a></li>
+             <li><a href="#other" data-toggle="tab"><br>其它</a></li>
+          </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="serve">
+        <img src="img/2015-01-12-01.jpg">
+        </div>
+        <div class="tab-pane fade" id="zhitongche">
+        <img src="img/2015-06-26-04.jpg">
+        </div>
+        <div class="tab-pane fade" id="jinianzhang">
+        <img src="img/20160614jinianzhang.jpg">
+        </div>
+        <div class="tab-pane fade" id="other">
+        <img src="img/2015-01-12-01.jpg">
+        </div>
+    </div>
+</div>
+<script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+   $(function () {
+      $('#myTab li:eq(0) a').tab('show');
+   });
+</script>
+</body>
+</html>

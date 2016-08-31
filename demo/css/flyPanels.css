@@ -6,6 +6,8 @@ body {
   line-height: 140%;
   overflow-x: hidden;
 }
+a:hover{
+	text-decoration:none;}
 html.flypanels-open,
 body.flypanels-open {
   overflow: hidden;
@@ -571,7 +573,7 @@ nav.flypanels-iconmenu li a:before {
 .flypanels-container .offcanvas .panelcontent[data-panel="search"] .searchbox .searchbutton:hover {
   text-decoration: none;
 }
-.login-button,.register-button,.home-button,.code{
+.login-button,.register-button,.fenshu-button,.code{
   margin-top:30px;
   background-color: #e2e2e2;
   border-color: #dfdfdf #eaeaea #e7e7e7;

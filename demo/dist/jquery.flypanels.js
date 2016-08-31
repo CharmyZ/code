@@ -136,10 +136,13 @@
        $('.link').click(function (event) {
 		         closeLeft();
 		   });
-	   $('.home-button,.searchbutton').click(function (event) {
+	   $('.home-button,.searchbutton,.fenshu-button').click(function (event) {
 		         closeRight();
 		   });
-		   
+	$('.link,.fenshubutton').click(function(event){
+		$('.content-search').hide(0)
+		$('.iframe_search').show(0)	
+		}); 
 		function afterWindowResize() {
 			innerHeight = window.innerHeight;
 			setHeight();

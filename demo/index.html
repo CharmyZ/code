@@ -12,8 +12,7 @@
 	<link rel="stylesheet" href="css/demo.css">
 <style> 
 @media screen and (max-width: 500px) {
-.item img{width: 100%; height:8%; }
-.pc,.carousel-control{
+.pc{
 	display:none;
 	}
 }
@@ -21,58 +20,31 @@
 .mobile{
 	display:none;
 }
-.carousel-inner{
-	width:80%;
-	margin:auto;
-}
-.item img{
-	width:100%;
-}
-.carousel-control.left,.carousel-control.right{
-	background-image:none;
-	background-repeat:no-repeat;
-	font-size:100px;
-	color:#FFF;
-	top:45%;
-}
-.carousel-control.left{
-	left:100px;
-}
-.carousel-control.right{
-	right:100px;
-}
 }
 </style>
 </head>
 <body data-debug="true">
 <!--手机显示页面-->
    <div class="flypanels-content">	
-	   <!--banner-->
-       <div id="myCarousel" class="carousel slide" data-ride="carousel"  style="margin-top:40px;">
-	      <ol class="carousel-indicators"  style="margin-bottom:-10px;">
-		      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		      <li data-target="#myCarousel" data-slide-to="1"></li>
-		      <li data-target="#myCarousel" data-slide-to="2"></li>
-	      </ol>
-	      <div class="carousel-inner">
-		      <div class="item active">
-			       <img src="img/banner1.png" data-src=" " alt="First slide">
-		      </div>
-		      <div class="item">
-			       <img src="img/banner2.png" data-src="" alt="Second slide">	
-		      </div>
-		      <div class="item">
-			       <img src="img/banner3.png" data-src="" alt="Third slide">	
-		      </div>
-	      </div>
-          <!-- Controls -->  
-           <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-           <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
-      </div>
+	   <!--banner--> 
+<div class="img_gallery" style="margin-top:50px;">
+	<div class="main_img">
+		<ul>
+			<li class="img_1"><img src="img/banner1.png"></span></li>
+			<li class="img_2"><img src="img/banner2.png"></span></li>
+			<li class="img_3"><img src="img/banner3.png"></span></li>
+		</ul>
+		<a href="javascript:;" id="btn_prev"><i class="fa fa-chevron-left"></i></a>
+		<a href="javascript:;" id="btn_next"><i class="fa fa-chevron-right"></i></a>
+	</div>
+	<div class="point">
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+	</div>
+</div>
              <!--banner ending-->
              <!-- 内容部分 -->
-    <div class="main pc">
-    </div>
     <div class="main mobile">
 	  <div class="classify"><span>评级新品展现</span><!--<a href="#">更多&nbsp;></a>--></div>
       <div class="show">
@@ -100,20 +72,58 @@
    </div>
 <script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="http://hammerjs.github.io/dist/hammer.min.js"></script>
-<script src="js/jquery.hammer.js"></script>
+<script type="text/javascript" src="js/jquery.event.drag.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
 <script>
-$('.carousel').carousel({
-   interval: 4000
-})
-</script>
-<script>
-$('#myCarousel').hammer().on('swipeleft', function(){  
-$('#myCarousel').carousel('next');  
-});  
-$('#myCarousel').hammer().on('swiperight', function(){  
-$('#myCarousel').carousel('prev');  
-}); 
+$(document).ready(function(){
+	$dragBln = false;
+	
+	$(".main_img").touchSlider({
+		flexible : true,
+		speed : 400,
+		btn_prev : $("#btn_prev"),
+		btn_next : $("#btn_next"),
+		paging : $(".point a"),
+		counter : function (e){
+			$(".point a").removeClass("on").eq(e.current-1).addClass("on");//图片顺序点切换
+		}
+	});
+	
+	$(".main_img").bind("mousedown", function() {
+		$dragBln = false;
+	});
+	
+	$(".main_img").bind("dragstart", function() {
+		$dragBln = true;
+	});
+	
+	$(".main_img a").click(function(){
+		if($dragBln) {
+			return false;
+		}
+	});
+	
+	timer = setInterval(function(){
+		$("#btn_next").click();
+	}, 3000);
+	
+	$(".img_gallery").hover(function(){
+		clearInterval(timer);
+	},function(){
+		timer = setInterval(function(){
+			$("#btn_next").click();
+		},3000);
+	});
+	
+	$(".main_img").bind("touchstart",function(){
+		clearInterval(timer);
+	}).bind("touchend", function(){
+		timer = setInterval(function(){
+			$("#btn_next").click();
+		}, 3000);
+	});
+	
+});
 </script>
 </body>
 </html>

@@ -18,23 +18,57 @@
 	<div class="flypanels-container preload">
 		<div class="offcanvas flypanels-left">
 			<div class="panelcontent" data-panel="treemenu">
-             <img class="ytlogo" src="img/logo.jpg">
+             <a href="demo.html" target="_blank"><img class="ytlogo" src="img/logo.jpg"></a>
 				<nav class="flypanels-treemenu" role="navigation">
-				<h3 style="text-align:center;color:#FFF">藏品详情</h3>
-    <table>
-		<tbody>
-          <tr><td> 藏品编号：14275001</td></tr>
-		  <tr><td>藏品名称：2016年熊猫银币</td></tr>
-          <tr><td>年号：2016</td></tr>
-          <tr><td>国家/地区：中国</td></tr>
-          <tr><td>题材：熊猫</td></tr>
-          <tr><td>面值：10元</td></tr>
-          <tr><td>重量：1盎司</td></tr >
-          <tr><td>材质：银</td></tr>
-          <tr><td>藏品编号：14275001</td></tr>
-          <tr><td>评级分数：90</td></tr>
-		</tbody>
-	 </table>
+					<ul>
+                     <li class="haschildren"><div><a class="link" href="index.html" target="main" data-panel="treemenu" >首页<i class="fa fa-home" style="font-size:22px;"></i></a></div></li>
+						<li class="haschildren"><div><a target="main" href="songping.html" class="link" data-panel="treemenu" >评级服务</a> <a href="#" class="expand">7<i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a target="main" href="songping.html" class="link">送评中心</a></div></li>
+								<li><div><a target="main" href="package.html" class="link">封装保护</a></div></li>
+                                <li><div><a target="main" href="scope.html" class="link">送评范围</a></div></li>
+                                <li><div><a target="main" href="scope.html" class="link">评级标准</a></div></li>
+                                <li><div><a target="main" href="scope.html" class="link">收费标准</a></div></li>
+                                <li><div><a target="main" href="team.html" class="link">团队介绍</a></div></li>
+                                <li><div><a target="main" href="mark.html" class="link">分数报告</a></div></li>
+							</ul>
+						</li>
+						<li class="haschildren"><div><a target="main" href="deposit.html" class="link">托管服务</a> <a href="#" class="expand">3<i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a target="main" href="deposit.html" class="link">托管中心</a></div></li>
+								<li><div><a target="main" href="deposit.html" class="link">托管贴士</a></div></li>
+								<li><div><a target="main" href="deposit.html" class="link">合作机构</a></div></li>
+							</ul>
+						</li>
+						<li class="haschildren"><div><a target="main" href="serve.html" class="link">增值服务</a> <a href="#" class="expand">4<i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a target="main" href="serve.html" class="link">个性化服务</a></div></li>
+								<li><div><a target="main" href="serve.html" class="link">直通车</a></div></li>
+								<li><div><a target="main" href="serve.html" class="link">源泰两周年纪念章</a></div></li>
+								<li><div><a target="main" href="serve.html" class="link">其它</a></div></li>
+                            </ul>
+						</li>
+						<!--<li class="haschildren"><div><a href="#" class="link">资讯快报</a> <a href="#" class="expand">2<i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a target="main" href="gonggao.html" class="link" >公告</a>
+								</div></li>
+								<li><div><a target="main" href="xinwen.html" class="link">新闻</a></div></li>
+							</ul>
+						</li>
+						<li class="haschildren"><div><a href="#" class="link">下载送评单</a> <a href="#" class="expand">5<i class="fa icon"></i></a></div>
+							<ul>
+								<li><div><a target="main" href="#" class="link">现代钱币</a></div></li>
+								<li><div><a target="main" href="#" class="link">古钱</a></div></li>
+                                <li><div><a target="main" href="#" class="link">机制币</a></div></li>
+                                <li><div><a target="main" href="#" class="link">纸钞</a></div></li>
+                                <li><div><a target="main" href="#" class="link">邮票</a></div></li>
+							</ul>
+						</li>
+						<li><div><a target="main" href="#" class="link">立刻送评</a></div></li>
+                        <li><div><a target="main" href="#" class="link" >查询进度</a></div></li>
+                        -->
+						<li><div><a target="main" href="#" class="link">联系我们</a></div></li>
+					</ul>
 				</nav>
 			</div>
            
@@ -54,7 +88,11 @@
 			
 			<div class="flypanels-content">
              <!-- 内容部分 -->
-              <div class="btn"> <a class="btnleft" href="#" hidefocus="true"></a><a class="btnright" href="#" hidefocus="true"></a></div>
+             <iframe class="iframe_search" id="iframepage" name="main" frameborder="0" width="100%" height="600px" style="display:none"></iframe>
+             <div class="content-search">
+             <!--左右切换按钮-->
+              <div class="btn"> <a class="btnleft" href="#"></a><a class="btnright" href="#"></a></div>
+              <!--图片展示部分-->
               <div class="swiper-container" style="margin-top:50px;">
              <div class="swiper-wrapper">
           <div class="swiper-slide"  style="width:100%;">
@@ -67,11 +105,12 @@
              <img class="u8" src="img/u8.jpg" />
           </div>
           </div>
+      </div>    
       </div>
-      </div>
+      <div class="pagination"></div>
       <div class="tabs">
-        <a href="#" hidefocus="true" class="active"> <img src="img/u5.jpg" /></a>
-        <a href="#" hidefocus="true"><img src="img/u8.jpg" /></a>
+        <a href="#" hidefocus="true"> <img src="img/u8.jpg" /></a>
+        <a href="#" hidefocus="true"  class="active"><img src="img/u5.jpg" /></a>
     </div>  
     
 			<div class="decoration">
@@ -99,8 +138,11 @@
 	 </table>
 	 
     </div>
-    </div>
+  </div>
+    
+     </div>
 			<!-- 内容部分结束 -->
+            <div class="footer">地址:上海市田林路1016号科技绿洲三期2-1号楼<br>沪ICP备1304671号</div>
 		</div>
 		 <!-- 主体部分结束-->
          
@@ -109,20 +151,20 @@
 			<div class="panelcontent" data-panel="search">
 				<div class="searchbox">
 					<input title="search" type="text" placeholder="源泰钱币搜索"/>
-					<a href="#" aria-label="search" class="searchbutton"><i class="fa fa-search"></i></a>
+					<a href="mobileindex.html" aria-label="search" class="searchbutton"><i class="fa fa-search"></i></a>
 				    </div>
-                    <a href="demo.html"><button class="home-button">首页<i class="fa fa-home"></i></button></a>
-				    <button class="login-button">源泰钱币分数报告</button>
+				    <a href="fenshu.html" target="main" class="fenshubutton" ><button class="fenshu-button">源泰钱币分数报告</button></a>
                     <img class="code" src="img/code.png">
 			</div>
 		</div>
 	</div>
 	    <!-- 右边隐藏侧边栏结束  -->
-	<script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js"></script>
-	<script src="dist/jquery.flypanels.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-   <script type="text/javascript" src="js/idangerous.swiper.min.js"></script> 
-	<script>
+<script src="http://libs.useso.com/js/jquery/1.11.0/jquery.min.js"></script>
+<script src="dist/jquery.flypanels.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/kitUtils.js"></script>
+<script type="text/javascript" src="js/idangerous.swiper.min.js"></script> 
+<script>
 		$(document).ready(function(){
 			$('.flypanels-container').flyPanels({
 				treeMenu: {
@@ -135,44 +177,30 @@
 			});
 			FastClick.attach(document.body);
 		});
-	</script>
-	<script>
-var tabsSwiper = new Swiper('.swiper-container',{
-	speed:500,
-	onSlideChangeStart: function(){
-		$(".tabs .active").removeClass('active');
-		$(".tabs a").eq(tabsSwiper.activeIndex).addClass('active');
-	}
-});
-$(".tabs a").on('touchstart mousedown',function(e){
-	e.preventDefault()
-	$(".tabs .active").removeClass('active');
-	$(this).addClass('active');
-	tabsSwiper.swipeTo($(this).index());
-});
-$(".tabs a").click(function(e){
-	e.preventDefault();
-});
 </script>
 <script>
- var btnSwiper = new Swiper('.swiper-container',{
-	speed:300,
-	onSlideChangeStart: function(){
-		$(".btn .active").removeClass('active');
-		$(".btn a").eq(tabsSwiper.activeIndex).addClass('active');
-	}
+  var mySwiper = new Swiper('.swiper-container',{
+    pagination: '.pagination',
+    loop:true,
+    grabCursor: true,
+    paginationClickable: true
+  })
+  $('.btnleft').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipePrev()
+  })
+  $('.btnright').on('click', function(e){
+    e.preventDefault()
+    mySwiper.swipeNext()
+  })
+  var tabsSwiper = new Swiper('.swiper-container',{
+	speed:500,
 });
-
-$(".btn a").on('touchstart mousedown',function(e){
-	e.preventDefault()
-	$(".btn .active").removeClass('active');
+$(".tabs a").click(function(e){
+e.preventDefault();
 	$(this).addClass('active');
 	tabsSwiper.swipeTo($(this).index());
 });
-
-$(".btn a").click(function(e){
-	e.preventDefault();
-});
-</script>
+  </script>
 </body>
 </html>
