@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <title>obj.js</title>
+</head>
+<style>
+    #demo{
+        color: red;
+    }
+</style>
+<body>
+
+<p class="demo">this is a desc</p>
+<a>s</a>
+<p class="demo">this is a desc</p>
+<a>s</a>
+
+<script src="/src/obj.js"></script>
+<script>
+
+    console.log($('.demo').prev('p').css('color','red'))
+
+</script>
+</body>
+</html>
